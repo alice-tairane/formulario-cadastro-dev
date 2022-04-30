@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    
+    <script src="main.js"></script>
+    <title>Formulário</title>
+</head>
+<body>
+   <main class="conteiner">
+    <div class="conteiner-imagem"></div>
+
+    <div class="conteiner-formulario">
+       
+          <header>
+              <h1>Cadastro de devs</h1>
+              <p>Complete suas informações</p>
+          </header>
+        <br>
+          <label >Nome</label>
+          <input type="text" placeholder="nome" class="input-nome nome" id="nome" name="txtNome">
+          <samp class="form-border"></samp>
+          <br>
+          <label >Sobrenome</label>
+          <input type="text" placeholder="Sobrenome" class="input-nome sobrenome" id="sobreNome" name="txtSobrenome">
+          <samp class="form-border"></samp>
+
+          <label >E-mail</label>
+         <input type="email" name="email" id="email" class="input-nome" placeholder="e-mail" name="txtEmail">
+          <samp class="form-border"></samp>
+
+          <label >Senha</label>
+         <input type="password" name="senha" id="senha" class="input-senha" placeholder="senha">
+          <samp class="form-border"></samp>
+          
+          
+
+          <h3>De qual lado da aplicação voce desenvolve?</h3>
+          <br>
+          <div class="input-radio">
+          <input  class="input-radio" type="radio" name=" front-end" id="front-end"> Front-end 
+          <input  class="input-radio" type="radio" name=" back-end" id="back-end"> Back-end 
+          <input  class="input-radio" type="radio" name=" fullstack" id="fullstack"> Fullstack 
+          </div>
+          <br>
+          <label >Senioridade</label>
+          <div class="senioridade">
+              <select  id="senioridade">
+              <option  selected disabled value="">Selecione</option>
+              <option >Junior</option>
+              <option >Pleno</option>
+              <option >Senior</option>
+              </select>
+          </div>
+          <br>
+          <div class="selecione-tecnologias">
+              <h3> Selecione as tecnologias que ultiliza :</h3>
+              <br>
+              <input type="checkbox" name="tecnologia1" id="tecnologia1" value="HTML">
+              <label >HTML</label>
+              <input type="checkbox" name="tecnologia2" id="tecnologia2" value="CSS">
+              <label >CSS</label>
+              <input type="checkbox" name="tecnologia3" id="tecnologia3" value="JAVASCRIPT">
+              <label >JAVASCRIPT</label>
+              <input type="checkbox" name="tecnologia4" id="tecnologia4" value="PHP">
+              <label >PHP</label>
+              <input type="checkbox" name="tecnologia5" id="tecnologia5" value="JAVA">
+              <label >JAVA</label>
+              <input type="checkbox" name="tecnologia6" id="tecnologia6" value="C#">
+              <label >C#</label>
+              <input type="checkbox" name="tecnologia7" id="tecnologia7" value="PYTHON">
+              <label >PYTHON</label>
+          </div>
+         <div class="botao-entrar">
+          <button type="submit" onClick="addNewUser()"class="botao-entrar"  onclick="cdPessoas(txtNome.value,  txtSobrenome.value, txtEmail.value)">Cadastrar</button>
+          <a href="tabela.html">usuarios</a>
+          </div>
+       
+        
+    </div>
+     
+   </main>
+
+</body>
+</html>

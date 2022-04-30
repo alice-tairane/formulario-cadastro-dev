@@ -1,0 +1,82 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+.conteiner{
+    height: 100vh;
+    background: linear-gradient(120deg,#2115cf,#ccda51);
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.conteiner-formulario, .conteiner-imagem{
+    
+    background: white;
+    min-height:670px;
+    width: 600px;
+    border-style: border-box;
+    padding: 33px;
+    display: flex;
+    flex-direction: column;
+    
+
+}
+.conteiner-imagem{
+    background-image: url(./pexels-kevin-ku-577585.jpg);
+}
+h1{
+    text-align: center;
+    margin-bottom: 5px;
+    
+}
+p{
+    text-align: center;
+    font-style: italic;
+    margin-top: 15px;
+}
+label{
+    text-align: left;
+    font-style: italic;
+
+}
+
+.input-nome{
+    margin-bottom: 18px;
+    height: 38px;
+    width: 100%;
+    box-sizing: border-box;
+    outline: none;
+    padding-left: 8px;
+    border: none;
+    border-bottom: 2px solid #cfcfcf;
+}
+.input-senha{
+    margin-bottom: 18px;
+    height: 38px;
+    width: 100%;
+    box-sizing: border-box;
+    outline: none;
+    padding-left: 8px;
+    border: none;
+    border-bottom: 2px solid #cfcfcf;
+}
+
+.botao-entrar{
+    margin-top: 25px;
+    width: 60%;
+    height: 40px;
+   text-align: center;
+   margin-left: 50px;
+
+}
+button{
+    background: linear-gradient(120deg,#2115cf,#ccda51);
+    border: none;
+    border-radius: 10px;
+}
+
+
+
